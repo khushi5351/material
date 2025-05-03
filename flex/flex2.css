@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
+
+.sub1 {
+    height: 85px;
+    width: 90%;
+    background-color: rgb(200, 237, 125);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.sub2 {
+    /* height: 350px; */
+    width: 90%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 5px;
+}
+
+.sub3 {
+    height: 85px;
+    width: 90%;
+    background-color: rgb(200, 237, 125);
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.d1 {
+    height: 350px;
+    width: 44%;
+    background-color: rgb(149, 221, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+.d2 {
+    height: 350px;
+    width: 56%;
+    background-color: rgb(182, 147, 215);
+    /* padding: 20px; */
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.k1 {
+    background-color: rgb(57, 174, 206);
+    height: 50px;
+    width: 85%;
+    border: 2px solid black;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    color: black;
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        background-color: rgb(36, 102, 159);
+    }
+
+    .d2 {
+        height: 300px;
+        width: 100%;
+        font-size: 70%;
+    }
+
+    .sub2 {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 90%;
+    }
+
+    .d1 {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .sub1 {
+        font-size: 50%;
+    }
+
+    .sub2 {
+        height: 70%;
+    }
+
+    .sub3 {
+        font-size: 50%;
+    }
+
+    .d1 {
+        height: 50%;
+        width: 100%;
+    }
+
+    .d2 {
+        height: 100%;
+        width: 100%;
+        font-size: 50%;
+    }
+
+    .k1 {
+        height: 20%;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .sub1 {
+        font-size: 50%;
+    }
+
+    .sub3 {
+        font-size: 50%;
+    }
+
+    .d1 {
+        height: 40%;
+        font-size: 60%;
+    }
+
+    .d2 {
+        height: 60%;
+        font-size: 45%;
+    }
+
+    .k1 {
+        height: 20%;
+    }
+}

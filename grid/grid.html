@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            height: 100vh;
+            width: 100%;
+            gap: 10px;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        #s1 {
+            background-color: blue;
+            grid-row: 1/4;
+            grid-column: 1/2;
+            border: 2px solid black;
+        }
+
+        #s2 {
+            background-color: rgb(38, 196, 99);
+            grid-row: 1/2;
+            grid-column: 2/4;
+            border: 2px solid black;
+        }
+
+        #s3 {
+            background-color: rgb(151, 27, 139);
+            grid-row: 1/2;
+            grid-column: 4/5;
+            border: 2px solid black;
+        }
+
+        #s4 {
+            background-color: rgb(57, 159, 168);
+            grid-row: 2/3;
+            grid-column: 2/3;
+            border: 2px solid black;
+        }
+
+        #s5 {
+            background-color: rgb(40, 203, 65);
+            grid-row: 2/3;
+            grid-column: 3/4;
+            border: 2px solid black;
+        }
+
+        #s6 {
+            background-color: rgb(166, 196, 57);
+            grid-row: 2/4;
+            grid-column: 4/5;
+            border: 2px solid black;
+        }
+
+        #s7 {
+            background-color: rgb(194, 86, 56);
+            grid-row: 3/4;
+            grid-column: 2/3;
+            border: 2px solid black;
+        }
+
+        #s8 {
+            background-color: rgb(100, 13, 22);
+            grid-row: 3/4;
+            grid-column: 3/4;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub1" id="s1"></div>
+        <div class="sub1" id="s2"></div>
+        <div class="sub1" id="s3"></div>
+        <div class="sub1" id="s4"></div>
+        <div class="sub1" id="s5"></div>
+        <div class="sub1" id="s6"></div>
+        <div class="sub1" id="s7"></div>
+        <div class="sub1" id="s8"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        #s1 {
+            background-color: rgb(175, 233, 125);
+            grid-row: 1/2;
+            grid-column: 1/6;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        #s2 {
+            background-color: rgb(108, 224, 224);
+            grid-row: 2/5;
+            grid-column: 1/3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            border: 2px solid black;
+            gap:5px;
+        }
+
+        #s3 {
+            background-color: rgb(225, 124, 225);
+            grid-row: 2/5;
+            grid-column: 3/6;
+            border: 2px solid black;
+            font-size: 85%;
+        }
+
+        #s4 {
+            background-color: rgb(175, 233, 125);
+            grid-row: 5/6;
+            grid-column: 1/6;
+            display: grid;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        #s5 {
+            background-color: rgb(53, 107, 172);
+            grid-row: 2/3;
+            grid-column: 2/5;
+            border: 2px solid black;
+        }
+
+        #s6 {
+
+            background-color: rgb(53, 107, 172);
+            grid-row: 3/4;
+            grid-column: 2/5;
+            border: 2px solid black;
+
+        }
+
+        #s7 {
+
+            background-color: rgb(53, 107, 172);
+            grid-row: 4/5;
+            grid-column: 2/5;
+            border: 2px solid black;
+        }
+
+        #a1 {
+            color: black;
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+
+        #a2 {
+            color: black;
+            grid-row: 1/2;
+            grid-column: 4/5;
+        }
+
+        #a3 {
+            color: black;
+            grid-row: 1/2;
+            grid-column: 5/6;
+        }
+
+        #a4 {
+            color: black;
+            grid-row: 1/2;
+            grid-column: 6/7;
+        }
+
+        p {
+            text-align: justify;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: justify;
+            padding: 10px;
+        }
+        @media screen  and (max-width:768px){
+            .main{
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+            #s3{
+                grid-row: 6/15;
+                grid-column:1/6 ;
+                font-size: 73%;
+            }
+            #s2{
+                grid-row: 2/6;
+                grid-column: 1/6;
+            }
+            #s4{
+                grid-row: 15/16;
+            }
+           
+        }
+        @media screen  and (max-width:430px){
+            #s3{
+              
+                font-size: 60%
+            }
+            #s1{
+                font-size: 70%;
+            }
+            #s4{
+                font-size: 70%;
+            }
+        }
+        @media screen and (max-width:376px) {
+            #s3{
+                font-size: 60%;
+            }
+        }
+        @media screen and (max-width:320px) {
+            #s3{
+                font-size: 59%;
+            }
+        }
+        </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub" id="s1">
+            <h2>ACME CO.</h2>
+            <a href="#" id="a1">HOME</a>
+            <a href="#" id="a2">ABOUT</a>
+            <a href="#" id="a3">PRICING</a>
+            <a href="#" id="a4">CONTACT</a>
+        </div>
+        <div class="sub" id="s2">
+            <div class="sub" id="s5"></div>
+            <div class="sub" id="s6"></div>
+            <div class="sub" id="s7"></div>
+        </div>
+        <div class="sub" id="s3">
+            <h1>Lorem Ipsum Dolor Sit Amet</h1>
+            <p>Cras Justo Odio, Dapibus Ac Facilisis In,
+                Egestas Eget Quam. Done Id Elit Non Mi Porta Gravida At Eget Metus. Done Sed Odio Dui.
+                Curabitur Blandit Tempus Porttitor. Etiam Porta Sem Malesuada Magna Mollis Euismod Curabitur Blandit
+                Tempus Porttitor. Donec Ullamcorper Nulla Non Metus Auctor Fringilla.</p>
+
+
+            <p>Cras Justo Odio, Dapibus Ac Facilisis In,
+                Egestas Eget Quam. Done Id Elit Non Mi Porta Gravida At Eget Metus. Done Sed Odio Dui.
+                Curabitur Blandit Tempus Porttitor. Etiam Porta Sem Malesuada Magna Mollis Euismod Curabitur Blandit
+                Tempus Porttitor. Donec Ullamcorper Nulla Non Metus Auctor Fringilla.</p>
+
+        </div>
+        <div class="sub" id="s4">
+            <h2>@ACME CO.</h2>
+        </div>
+
+    </div>
+</body>
+
+</html>
