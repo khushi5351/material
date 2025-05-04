@@ -7,6 +7,7 @@
 body {
     background-color: white;
     font-style: italic;
+    
 }
 
 #home {
@@ -41,7 +42,7 @@ body {
     box-shadow: 0px -7px 18px 4px #000;
     background-color: white;
     position: sticky;
-    top: 10px;
+    top: 1px;
 }
 
 .n2 {
@@ -315,33 +316,25 @@ footer {
     box-shadow: 0 0px 4px 0px black;
 }
 
-@media screen and (max-width:768px) {
+ @media screen and (max-width:768px) {
     .home {
         height: 100%;
         flex-direction: column-reverse;
         gap: 20px;
     }
-
-    .img1 {
+ 
+   .img1 {
         height: 600px;
         width: 600px;
         border-radius: 300px;
     }
-    .h1{
-        width:90%;
-    }
     #h1{
         text-align: center;
-        gap:20px;
-    }
-    .about{
-        height: 95vh;
+        width: 90%;
+        gap: 20px;
     }
     .a1{
-        width:90%;
-    }
-    .skill1{
-        height: 90vh;
+        width: 90%;
     }
     .sk1{
         width: 90%;
@@ -350,12 +343,12 @@ footer {
         width: 90%;
     }
     .exp{
-        height: 180vh;
-    }
-    .exp1{
-        width: 90%;
+        height: 160vh;
     }
     .ex1{
+        width: 90%;
+    }
+    .exp1{
         width: 90%;
     }
     .p1{
@@ -363,128 +356,55 @@ footer {
     }
     .projects{
         width: 90%;
-        
     }
-    .project-card{
-        height: 85%;
-        width: 30%;
-       
+    .c3{
+        width: 90%;
     }
     .contact{
         height: 120vh;
     }
-   .contact1{
-    width: 90%;
-   }
-
-    .c3{
+    .contact1{
         width: 90%;
-    }  
+    }
 }
+   
+
 @media screen and (max-width:426px) {
-    .n1{
-        width: 135%;
-        height: 70px;
-        font-size: 95%;
-        top: 10px;
-    }
-    .n2{
-        width: 50%;
-        gap: 2px;
-    }
-    .img1{
-        height: 400px;
-        width: 400px;
-    }
-    .home{
-        height: 200vh;
-        width:135%;
-    }
+   .n1{
+   
+    width: 530px;
+    font-size: small;
+    gap: 5px;
+   }
+   .img1 {
+    height: 500px;
+    width: 500px;
+    border-radius: 300px;
+}
+.home{
+    width: 530px;
 }
 #h1{
-    font-size: x-large;
+    text-align: center;
+    width: 90%;
+    gap: 20px;
 }
 .about{
-    height: 120vh;
-    width: 135%;
-    font-size: x-large;
+    width: 530px;
 }
 .skill1{
-    font-size: x-large;
-    width: 135%;
-}
-.skill{
-    height: 37px;
-    width: 137px;
+    width: 530px;
 }
 .exp{
-    height: 280vh;
-    width: 135%;
-    font-size: x-large;
+    width: 530px;
 }
 .project{
-    width: 135%;
+    width: 530px;
 }
 .contact{
-    height: 130vh;
-    width: 135%;
+    width: 530px;
 }
 footer{
-    width: 135%;
+    width: 530px;
 }
-@media screen and (max-width:379px) {
-    .n1{
-        width:149%;
-        font-size: 85%;
-    }
-    .home{
-        width:149%;
-    }
-    .about{
-        width:149%;
-    }
-    .skill1{
-        width:149%;
-    }
-    .exp{
-        width:149%;
-    }
-    .project{
-        width:149%;
-    }
-    .contact{
-        width:149%;
-    }
-    footer{
-        width:149%;
-    }
-}
-@media screen and (max-width:320px) {
-    .n1{
-        height: 100px;
-        width:161%;
-        font-size: 100%;
-    }
-    .home{
-        width:161%;
-    }
-    .about{
-       
-        width:161%;
-    }
-    .skill1{
-        width:161%;
-    }
-    .exp{
-        width:161%;
-    }
-    .project{
-        width:161%;
-    }
-    .contact{
-        width:161%;
-    }
-    footer{
-        width:161%;
-    }
 }
